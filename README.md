@@ -20,6 +20,7 @@ _Toy Funko Market, es una tienda de colección virtual Geek que ofrece la compra
 _Autores del desarrollo del proyecto_
 
 * **Niurka Rosas**   Ingeniera de sistemas, Soy Frontend Jr, tengo 31 años y estoy aprendiendo React Js y a patinar. 
+* **Josibel Hernández**   Frontend Jr, 27 años e Ingeniera en Informática. 
 
 ## Construido con 🛠️
 
