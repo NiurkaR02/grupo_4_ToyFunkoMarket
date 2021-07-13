@@ -1,0 +1,23 @@
+{
+  "name": "grupo_4_toyfunkomarket",
+  "version": "1.0.0",
+  "description": "Proyecto integrador",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NiurkaR02/grupo_4_ToyFunkoMarket.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NiurkaR02/grupo_4_ToyFunkoMarket/issues"
+  },
+  "homepage": "https://github.com/NiurkaR02/grupo_4_ToyFunkoMarket#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.12"
+  }
+}
