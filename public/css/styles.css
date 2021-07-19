@@ -1,0 +1,291 @@
+@font-face {
+    font-family: 'Lato Black';
+    src: url('../fonts/Lato/') format('woff2'),
+        url('../fonts/Lato/Lato-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lato Bold';
+    src: url('../fonts/Lato/Lato-Bold.woff2') format('woff2'),
+        url('../fonts/Lato/Lato-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/Lato/Lato-Regular.woff2') format('woff2'),
+        url('../fonts/Lato/Lato-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body{
+    font-family: 'Lato';
+    font-size: 16px;
+    color: #4d4d4d;
+}
+
+a{
+    text-decoration: none;
+    color: #4d4d4d;
+}
+
+ul{
+    padding-left: 0;
+}
+
+ul li{
+    list-style: none;
+}
+
+h2{
+    font-family: 'Lato Bold';
+}
+
+/**** HOME ****/
+
+.page-container{
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1320px;
+    width: 100%;
+}
+
+.page-container header {
+    display: flex;
+    padding: 15px 0 15px 0;
+    align-items: center;
+    font-size: 16px;
+    border-bottom: 1px solid #eee;
+}
+
+.page-container header .header-logo, .page-container header .header-link-login,
+.page-container nav .navbar, .page-container nav .input-search, .page-container nav .search-products{
+    display: flex;
+    width: 50%;
+}
+
+.page-container header .header-logo img{
+    max-width: 280px;
+}
+
+.page-container header .header-link-login{
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.page-container header .header-link-login::after{
+    padding: 3px 0px 0 6px;
+    font-family: "Font Awesome 5 Free";
+    content: "\f500";
+    display: inline-block;
+    padding-right: 3px;
+    vertical-align: middle;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.page-container nav{
+    display: flex;
+    align-items: center;
+    padding: 10px 0 10px 0;
+}
+.page-container nav .navbar ul{
+    padding-left: 0;
+}
+.page-container nav .navbar ul li{
+    display: inline-block;
+    margin: 0 12px 0 12px;
+}
+
+.page-container nav .navbar ul li a{
+    color: #335BEB;
+    font-family: 'Lato Bold';
+}
+
+.page-container nav .navbar ul li a:hover{
+    color: #d7cf45;
+    text-decoration: underline;
+}
+
+.page-container nav .navbar ul li:first-child{
+    margin-left: 0;
+}
+
+.page-container nav .navbar ul li:last-child{
+    margin-right: 0;
+}
+
+.page-container nav .search-products form{
+    position: relative;
+}
+
+.page-container nav .search-products input{
+    position: relative;
+    padding: 0 10px 0 10px;
+    width: 100%;
+    min-width: 290px;
+    height: 36px;
+}
+
+.page-container nav .search-products i{
+    position: absolute;
+    top: 11px;
+    right: 10px;
+}
+
+.page-container nav .search-products{
+    justify-content: flex-end;
+}
+
+.page-container section.banner-home img{
+    width: 100%;
+}
+
+.page-container section.slider-home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-container section.slider-home i{
+    font-size: 40px;
+}
+
+.page-container section .slider-home-img{
+   margin: 0 10px 0 10px;
+}
+
+.page-container section.slider-home img{
+    width: 230px;
+}
+
+.page-container section .container-productos-home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.page-container section.productos-home .box-producto{
+    position: relative;
+    margin: 0 35px 0px 35px;
+    width: 280px;
+    height: 360px;
+    border: 1px solid;
+}
+
+.page-container section.productos-home .box-producto:first-child{
+    margin-left: 0;
+}
+
+.page-container section.productos-home .box-producto:last-child{
+    margin-right: 0;
+}
+
+
+.page-container section.productos-home .box-producto img{
+    display: block;
+    margin: auto;
+    width: 90%;
+    padding: 10px;
+}
+
+.page-container section.productos-home .box-producto button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #335BEB;
+    color: #FFF;
+    border: none;
+    height: 36px;
+    font-family: 'Lato';
+    width: 100%;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 0;
+}
+
+.page-container section.productos-home .box-producto button::after{
+    padding: 0px 0px 0 6px;
+    font-family: "Font Awesome 5 Free";
+    content: "\f217";
+    display: inline-block;
+    padding-right: 3px;
+    vertical-align: middle;
+    font-weight: 900;
+    font-size: 14px;
+
+}
+
+.page-container section.productos-home .box-producto button:hover{
+    background-color: #d7cf45;
+    color: #4d4d4d;
+
+}
+
+.page-container section.productos-home .box-producto .descripcion-productos{
+    background-color: #ececec;
+    padding: 10px;
+
+}
+
+
+
+.page-container section.productos-home .box-producto p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.page-container section.productos-home .box-producto p, .page-container section.productos-home .box-producto span{
+    font-family: 'Lato Bold';
+}
+
+.page-container section.productos-home .box-producto span{
+    font-style: italic;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    padding: 0 50px 0 50px;
+    background-color: #d7cf45;
+    font-family: 'Lato Bold';
+}
+
+footer .redes-sociales{
+    width: 50%;
+}
+
+footer .redes-sociales ul li{
+    display: inline-block;
+}
+
+footer .redes-sociales i{
+    font-size: 30px;
+    margin: 0 20px 0 20px;
+}
+
+footer .contactanos{
+    width: 50%;
+    text-align: right;
+}
+
+/* PALETA DE COLORES*/
+
+/*
+
+azul-claro : #06B6E7;
+amarillo: #d7cf45
+gris-claro #ececec
+morado: #335BEB
+
+*/
