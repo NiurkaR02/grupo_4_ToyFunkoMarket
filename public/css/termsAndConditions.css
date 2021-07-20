@@ -1,0 +1,33 @@
+main{
+    max-width: 1188px;
+    margin: auto;
+}
+
+main .main-title{
+    text-align: center;
+    border-bottom: 1px solid #dbdbdb;
+    padding-bottom: 15px;
+}
+
+main section .section-terms-title{
+   text-transform: capitalize;
+   margin-bottom: 10px;
+}
+main section:last-child .section-terms-content{
+   margin-top: 20px;
+   margin-bottom: 10px;
+}
+
+main section p.section-terms-content{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+main section ul li{
+    list-style: disc;
+    line-height: 1.5;
+}
+main section ul{
+    margin-left: 20px;
+}
