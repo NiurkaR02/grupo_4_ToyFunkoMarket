@@ -27,6 +27,9 @@ app.get('/login', (req, res) =>{
     res.sendFile(path.join(__dirname, 'views/login.html'));
 });
 
+app.get('/termsAndConditions', (req, res) =>{
+    res.sendFile(path.join(__dirname, 'views/termsAndConditions.html'));
+});
 
 
 //Para levantar servidor
