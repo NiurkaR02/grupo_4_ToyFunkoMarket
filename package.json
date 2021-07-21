@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/NiurkaR02/grupo_4_ToyFunkoMarket#readme",
   "dependencies": {
+    "animate.css": "^4.1.1",
     "express": "^4.17.1",
     "nodemon": "^2.0.12"
   }

@@ -45,7 +45,11 @@ ul li{
 }
 
 h2{
+    margin-top: 30px;
+    margin-bottom: 30px;
     font-family: 'Lato Bold';
+    text-transform: uppercase;
+    text-align: center;
 }
 
 /**** HOME ****/
@@ -149,6 +153,10 @@ h2{
 }
 
 .page-container section.slider-home{
+
+}
+
+.page-container section.slider-home .container-productos-home{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -180,7 +188,22 @@ h2{
     width: 280px;
     height: 360px;
     border: 1px solid;
+    box-shadow: 5px 0px 12px 3px #999999;
+    border-radius: 5px;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
 }
+
+.page-container section.productos-home .box-producto:hover{
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
 
 .page-container section.productos-home .box-producto:first-child{
     margin-left: 0;
