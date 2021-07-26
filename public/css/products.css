@@ -1,0 +1,66 @@
+/**** HOME ****/
+
+.page-container{
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1320px;
+    width: 100%;
+    height: 100%;
+}
+
+.page-container-products.page-container .container-productos-home{
+    flex-wrap: wrap;
+}
+
+.page-container-products.page-container .productos-home h2{
+    text-transform: capitalize;
+    text-align: center;
+    color: #666464;
+    font-weight: normal;
+}
+
+.page-container-products.page-container .container-productos-home .box-producto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 12px;
+    border-color: #dfdfdf;
+    box-shadow: 5px 0px 12px 3px #dfdfdf;
+}
+
+.page-container-products.page-container .container-productos-home .box-producto .content-image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    flex: 0.85;
+}
+
+.page-container-products.page-container .container-productos-home .box-producto .descripcion-productos{
+    background-color: #86b9fb1c;
+    padding: 10px;
+    flex: 0.22;
+    width: 100%;
+}
+
+.page-container-products.page-container .container-productos-home .box-producto button{
+    flex: 0.1;
+}
+
+.page-container-products.page-container .container-productos-home .box-producto:first-child {
+    margin: 12px;
+}
+
+
+/* PALETA DE COLORES*/
+
+/*
+
+azul-claro : #06B6E7;
+amarillo: #d7cf45
+gris-claro #ececec
+morado: #335BEB
+
+*/
