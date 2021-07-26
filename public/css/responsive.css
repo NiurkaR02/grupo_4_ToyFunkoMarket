@@ -1,0 +1,5 @@
+@media (max-width: 992px){
+    .page-container section .container-productos-home{
+        justify-content: center;
+    }
+}

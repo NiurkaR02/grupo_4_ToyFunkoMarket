@@ -68,12 +68,12 @@ h2{
     max-width: 1320px;
     width: 100%;
     height: 100%;
-
+    padding: 0 15px;
 }
 
 .page-container header {
     display: flex;
-    padding: 15px 0 15px 0;
+    padding: 20px 0 2px 0;
     align-items: center;
     font-size: 16px;
     border-bottom: 1px solid #eee;
@@ -108,7 +108,7 @@ h2{
 .page-container nav{
     display: flex;
     align-items: center;
-    padding: 10px 0 10px 0;
+    padding: 2px 0 2px 0;
     justify-content: space-between;
     border-bottom: 1px solid #eee;
     margin-bottom: 20px;
@@ -139,6 +139,7 @@ h2{
     text-decoration: none;
     color: #FFF;
     background-color: #006494;
+    transition: 0.5s;
 }
 
 .page-container nav .navbar ul li:first-child{
@@ -211,7 +212,8 @@ h2{
 .page-container section .container-productos-home{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 
@@ -245,13 +247,13 @@ h2{
 }
 
 
-.page-container section.productos-home .box-producto:first-child{
+/* .page-container section.productos-home .box-producto:first-child{
     margin-left: 0;
 }
 
 .page-container section.productos-home .box-producto:last-child{
     margin-right: 0;
-}
+} */
 
 
 .page-container section.productos-home .box-producto img{
