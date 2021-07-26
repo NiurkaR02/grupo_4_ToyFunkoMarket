@@ -33,6 +33,9 @@ app.get('/termsAndConditions', (req, res) =>{
 app.get('/products', (req, res) =>{
     res.sendFile(path.join(__dirname, 'views/products.html'));
 });
+app.get('/perfil', (req, res) =>{
+    res.sendFile(path.join(__dirname, 'views/perfil.html'));
+});
 
 
 //Para levantar servidor
