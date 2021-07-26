@@ -135,7 +135,7 @@ h2{
     color: #FFF;
 }
 
-.page-container nav .navbar ul li a:hover{
+.page-container nav .navbar ul li a:hover, .page-container nav .navbar ul li a.active{
     text-decoration: none;
     color: #FFF;
     background-color: #006494;
@@ -358,6 +358,44 @@ footer .contactanos{
     width: 50%;
     text-align: right;
 }
+
+.btn{
+    border: 0;
+    height: 36px;
+    max-width: 138px;
+    width: 100%;
+    padding: 8px 10px;
+    border-radius: 5px;
+    color: #fff;
+    font-family: 'Lato Bold';
+    font-size: 16px;
+}
+
+.btn.btn-default{
+    background-color: #12addd;
+    color: #fff;
+}
+
+.btn.btn-default:hover {
+    color: #12addd;
+    background-color: #fff;
+    border: 1px solid #12addd;
+    transition: 0.5s;
+}
+
+.btn.btn-secondary{
+    background-color: #511F73;
+    color: #fff;
+}
+
+.btn.btn-secondary:hover {
+    color: #3e1659;
+    border: 1px solid #3e1659;
+    background-color: #fff;
+    transition: 0.5s;
+}
+
+
 
 /* PALETA DE COLORES*/
 

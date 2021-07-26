@@ -34,6 +34,11 @@
     width: 56px;
 }
 
+.page-container section.products-content-detail .product-description input:focus-visible {
+    border: 1px solid #dfdfdf;
+    outline: 1px solid #e5e5e5;
+}
+
 .page-container section.products-content-detail .product-description .button-add {
     background-color: #12addd;
     border: 0;
