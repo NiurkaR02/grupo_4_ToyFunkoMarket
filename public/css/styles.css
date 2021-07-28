@@ -52,10 +52,9 @@ ul li{
 h2{
     margin-top: 30px;
     margin-bottom: 30px;
-    font-family: 'Lato';
+    font-family: 'Lato Bold';
     text-align: center;
-    text-transform: capitalize;
-    text-align: center;
+    text-transform: uppercase;
     color: #666464;
     font-weight: normal;
 }
@@ -398,10 +397,8 @@ footer .contactanos{
 /* PALETA DE COLORES*/
 
 /*
-
-azul-claro : #06B6E7;
-amarillo: #d7cf45
+principal azul oscuro: #171b28
+gris ocuro: hover #5b5b5b;
 gris-claro #ececec
-morado: #335BEB
 
 */
