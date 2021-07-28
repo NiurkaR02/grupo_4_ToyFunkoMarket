@@ -1,0 +1,125 @@
+.container-cart-product{
+    margin: auto;
+    margin-top: 50px;
+    border: 1px solid #eee;
+}
+
+.container-cart-product .details-product{
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #eee;
+
+}
+
+.container-cart-product .details-product:first-child label{
+    display: block;
+}
+
+.container-cart-product .details-product label{
+    display: none;
+}
+
+.container-cart-product .details-product label{
+    background: #eee;
+    box-sizing: border-box;
+    height: 30px;
+    border-bottom: 1px solid #eee;
+    padding: 5px 10px 5px 10px;
+    font-weight: bold;
+}
+
+
+
+.container-cart-product .details-product div{
+    border-right: 1px solid #eee;
+}
+
+.container-cart-product .details-product:first-child .box-description{
+    height: 160px;
+}
+
+
+
+.container-cart-product .details-product .box-description{
+    display: grid;
+    width: 15%;
+    height: 140px;
+
+}
+
+.container-cart-product .details-product .description-product.box-description{
+    width: 40%;
+}
+
+.container-cart-product .details-product div:last-child{
+    border-right: none;
+}
+
+.container-cart-product .details-product:first-child .box-description p{
+    padding: 0 10px 0 10px;
+}
+
+.container-cart-product .details-product p{
+    padding: 35px 10px 0 10px;
+}
+
+.container-cart-product .details-product .img-producto .button-img {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px 5px 10px;
+}
+
+.container-cart-product .details-product .img-producto .button-img img{
+    margin-left: 15px;
+    width: 100px;
+    height: 100px;
+}
+
+.container-cart-product .details-product .img-producto .button-img button{
+    background-color: #eee;
+    border: none;
+    border-radius: 100px;
+    font-size: 18px;
+    width: 30px;
+    height: 30px;
+}
+
+
+.container-cart-product .footer-cart{
+    display: flex;
+    background: #eee;
+    border-top: 1px solid #eee;
+}
+
+.container-cart-product .footer-cart .address-total{
+    line-height: 22px;
+}
+
+.container-cart-product .footer-cart .address-total,
+.container-cart-product .footer-cart .button-buy{
+    width: 50%;
+    padding: 15px;
+}
+
+.container-cart-product .footer-cart .button-buy{
+    text-align: end;
+}
+.container-cart-product .footer-cart .address-total p:last-child{
+    font-size: 14px;
+}
+
+.container-cart-product .footer-cart p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.container-cart-product .footer-cart .button-buy button{
+    padding: 0 15px 0 15px;
+    height: 36px;
+    background: #335BEB;
+    border: none;
+    font-weight: bold;
+    color: #fff;
+
+}
+
