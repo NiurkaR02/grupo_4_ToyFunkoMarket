@@ -1,0 +1,41 @@
+@media screen and (min-width: 320px) and (max-width: 767px)  {
+    .page-container header, .page-container header .header-logo,
+    .page-container header .header-link-login{
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+
+    .page-container nav, .page-container nav .search-products{
+        display: block;
+        width: 100%;
+    }
+
+    .page-container nav .navbar{
+        display: none;
+    }
+
+    .page-container section.slider-home .container-productos-home{
+        display: block;
+    }
+
+    .page-container section .container-productos-home{
+        display: block;
+    }
+
+    .page-container section.productos-home .box-producto {
+        width: 90%;
+    }
+
+    footer{
+        padding: 20px;
+        display: block;
+        text-align: center;
+    }
+
+    footer .redes-sociales, footer .contactanos{
+        width: 100%;
+        text-align: center;
+    }
+
+}

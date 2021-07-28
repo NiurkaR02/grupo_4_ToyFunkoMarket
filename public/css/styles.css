@@ -154,9 +154,6 @@ h2{
     width: 100%;
 }
 
-.page-container section.slider-home{
-
-}
 
 .page-container section.slider-home .container-productos-home{
     display: flex;
@@ -188,7 +185,8 @@ h2{
 
 .page-container section.productos-home .box-producto{
     position: relative;
-    margin: 0 35px 0px 35px;
+    margin: auto;
+    margin-bottom: 25px;
     width: 280px;
     height: 360px;
     border: 1px solid;
@@ -207,16 +205,6 @@ h2{
     -ms-transform: scale(1.1);
     transform: scale(1.1);
 }
-
-
-.page-container section.productos-home .box-producto:first-child{
-    margin-left: 0;
-}
-
-.page-container section.productos-home .box-producto:last-child{
-    margin-right: 0;
-}
-
 
 .page-container section.productos-home .box-producto img{
     display: block;
