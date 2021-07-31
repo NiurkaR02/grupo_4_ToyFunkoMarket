@@ -1,44 +1,48 @@
-const express = require('express')
-const path = require('path')
+var createError = require('http-errors');
+var express = require('express');
+var path = require('path');
+var cookieParser = require('cookie-parser');
+var logger = require('morgan');
 
-const app = express();
+var indexRouter = require('./src/routes/index');
+var usersRouter = require('./src/routes/users');
+var productsRouter = require('./src/routes/products');
 
-app.use(express.static(__dirname + '/public'));
+var app = express();
 
-//Definir rutas
+// view engine setup
+app.set('views', path.join(__dirname, './src/views'));
+app.set('view engine', 'ejs');
 
-app.get('/', (req, res) =>{
-    res.sendFile(path.join(__dirname, 'views/home.html'));
+app.use(logger('dev'));
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
+app.use(cookieParser());
+app.use(express.static(path.join(__dirname, './src/public')));
+
+app.use('/', indexRouter);
+app.use('/user', usersRouter);
+app.use('/login', usersRouter);
+app.use('/register', usersRouter);
+app.use('/products', productsRouter);
+app.use('/productDetail', productsRouter);
+app.use('/ProductsCart', productsRouter);
+app.use('/termsAndConditions', indexRouter);
+
+// catch 404 and forward to error handler
+app.use(function(req, res, next) {
+  next(createError(404));
 });
 
-app.get('/productDetail', (req, res) =>{
-    res.sendFile(path.join(__dirname, 'views/productDetail.html'));
+// error handler
+app.use(function(err, req, res, next) {
+  // set locals, only providing error in development
+  res.locals.message = err.message;
+  res.locals.error = req.app.get('env') === 'development' ? err : {};
+
+  // render the error page
+  res.status(err.status || 500);
+  res.render('error');
 });
 
-app.get('/productCart', (req, res) =>{
-    res.sendFile(path.join(__dirname, 'views/productCart.html'));
-});
-
-app.get('/register', (req, res) =>{
-    res.sendFile(path.join(__dirname, 'views/register.html'));
-});
-
-app.get('/login', (req, res) =>{
-    res.sendFile(path.join(__dirname, 'views/login.html'));
-});
-
-app.get('/termsAndConditions', (req, res) =>{
-    res.sendFile(path.join(__dirname, 'views/termsAndConditions.html'));
-});
-app.get('/products', (req, res) =>{
-    res.sendFile(path.join(__dirname, 'views/products.html'));
-});
-app.get('/perfil', (req, res) =>{
-    res.sendFile(path.join(__dirname, 'views/perfil.html'));
-});
-
-
-//Para levantar servidor
-app.listen(3000, () =>{
-    console.log('Servidor iniciado')
-})
+module.exports = app;
