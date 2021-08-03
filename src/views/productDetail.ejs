@@ -1,41 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="/css/productDetail.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
-    <title>Details Product</title>
-</head>
+<%- include('./partials/head') %>
 <body>
     <div class="page-container product-container-detail">
-        <header>
-            <div class="header-logo">
-                <a href="/"><img src="/img/logo-toy-funko.png" alt="Toy Funko Market" title="Logo Toy Funko Market"></a>
-            </div>
-            <div class="header-link-login">
-                <a href="/login">Ingrese aquí</a>
-            </div>
-        </header>
-        <nav>
-            <div class="navbar">
-                <ul>
-                    <li><a href="/">Inicio</a></li>
-                    <li><a href="/products">Productos</a></li>
-                    <li><a href="/perfil">Mi perfil</a></li>
-                    <li><a href="/productCart">Carrito de compras</a></li>
-                    <li><a href="/termsAndConditions">Términos y Condiciones</a></li>
-                </ul>
-            </div>
-            <div class="search-products">
-                <form>
-                    <input type="search" placeholder="Buscar productos..">
-                    <i class="fas fa-search"></i>
-                </form>
-            </div>
-        </nav>
+        <%- include('./partials/header') %>
         <section class="products-content-detail">
             <div class="container-productos">
                 <div class="box-producto">
@@ -48,7 +16,7 @@
                     <h3>2.000 $</h3>
                     <p>Figura Darth Vader Funko POP Star Wars Clásico</p>
                      <input type="number" placeholder="#"/>
-                    <button role="button" class="button-add">Añadir al carrito <i class="fas fa-shopping-cart"></i></button>
+                    <button role="button" class="button-add"><a href="/productsCart">Añadir al carrito <i class="fas fa-shopping-cart"></i></a></button>
                     <p><b>Etiquetas: </b>Funko, Funko Pop!, Funkos, Juguetes y Coleccionables, Star Wars</p>
                 </div>              
             </div>
@@ -65,17 +33,6 @@
         </section>  
     </div>
 
-    <footer>
-        <div class="redes-sociales">
-            <ul>
-                <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
-                <li><a href=""><i class="fab fa-instagram"></i></a></li>
-                <li><a href=""><i class="fab fa-twitter"></i></a></li>
-            </ul>
-        </div>
-        <div class="contactanos">
-            <p>Contactanos: 0800-000-000</p>
-        </div>
-    </footer>
+    <%- include('./partials/footer') %>
 </body>
 </html>

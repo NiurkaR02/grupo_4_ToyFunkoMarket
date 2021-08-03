@@ -1,44 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="/css/responsive.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
-        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
-    <title>Inicio</title>
-</head>
+<%- include('./partials/head') %>
 
 <body>
     <div class="page-container">
-        <header>
-            <div class="header-logo">
-                <a href="/"><img src="/img/logo-toy-funko.jpg" alt="Toy Funko Market" title="Logo Toy Funko Market"></a>
-            </div>
-            <div class="header-link-login">
-                <a href="/user/login">Ingrese aquí</a>
-            </div>
-        </header>
-        <nav>
-            <div class="navbar">
-                <ul>
-                    <li><a class="active" href="/">Inicio</a></li>
-                    <li><a href="/products">Productos</a></li>
-                    <li><a href="/user">Mi perfil</a></li>
-                    <li><a href="/products/ProductsCart">Carrito de compras</a></li>
-                    <li><a href="/termsAndConditions">Términos y Condiciones</a></li>
-                </ul>
-            </div>
-            <div class="search-products">
-                <form>
-                    <input type="search" placeholder="Buscar productos..">
-                    <i class="fas fa-search"></i>
-                </form>
-            </div>
-        </nav>
+        <%- include('./partials/header') %>
         <section class="banner-home">
             <img src="/img/banner-home.jpg" alt="Banner home" title="Banner home">
         </section>
@@ -65,8 +32,6 @@
         <section class="productos-home">
             <h2>Productos destacados</h2>
             <div class="container-productos-home">
-
-
                 <article>
                     <a class="box-producto" href="/products/productDetail">
                         <div class="content-image">
@@ -130,18 +95,7 @@
         </section>
 
     </div>
-    <footer>
-        <div class="redes-sociales">
-            <ul>
-                <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
-                <li><a href=""><i class="fab fa-instagram"></i></a></li>
-                <li><a href=""><i class="fab fa-twitter"></i></a></li>
-            </ul>
-        </div>
-        <div class="contactanos">
-            <p>Contactanos: 0800-000-000</p>
-        </div>
-    </footer>
+    <%- include('./partials/footer') %>
 </body>
 
 </html>

@@ -5,8 +5,8 @@ const productsController = {
     productDetail: (req, res) => {
         res.render('productDetail');
     },
-    ProductsCart: (req, res) => {
-        res.render('ProductsCart');
+    productsCart: (req, res) => {
+        res.render('productsCart');
     }
 }
 

@@ -26,7 +26,7 @@ app.use('/login', usersRouter);
 app.use('/register', usersRouter);
 app.use('/products', productsRouter);
 app.use('/productDetail', productsRouter);
-app.use('/ProductsCart', productsRouter);
+app.use('/productsCart', productsRouter);
 app.use('/termsAndConditions', indexRouter);
 
 // catch 404 and forward to error handler
