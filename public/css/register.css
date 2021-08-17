@@ -1,0 +1,84 @@
+.form-register{
+    padding: 40px;
+    margin: auto;
+    margin-top: 40px;
+    width: 100%;
+    max-width: 500px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+}
+
+.form-register p{
+    font-weight: bold;
+}
+
+.form-register a{
+    color: #335BEB;
+}
+
+.form-register input{
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+    height: 36px;
+    background: #ececec;
+    border: none;
+    box-sizing: border-box;
+}
+
+.form-register input:hover{
+    background-color: #ececec;
+}
+
+.form-register button{
+    display: block;
+    margin: auto;
+    margin-top: 65px;
+    width: 200px;
+    height: 36px;
+    background-color: #335BEB;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.form-register .text-forgot-pass{
+    text-align: center;
+}
+
+.form-register .remember-pass{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.form-register .remember-pass input{
+    display: inline-flex;
+    margin: initial;
+    margin-right: 10px;
+    margin-bottom: 0;
+    padding: 10px;
+    width: 15px;
+    max-width: 15px;
+    height: 15px;
+}
+
+.form-register .user-new{
+text-align: center;
+}
+
+.form-register .user-new hr{
+    width: 80%;
+    margin-top: 60px;
+    border-top: 1px solid #ececec;
+}
+
+.form-register .user-new a{
+    text-decoration: underline;
+    color: #335BEB;
+}
