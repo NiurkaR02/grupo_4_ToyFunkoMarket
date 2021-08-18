@@ -7,6 +7,9 @@ const productsController = {
     },
     productsCart: (req, res) => {
         res.render('productsCart');
+    },
+    productEditDetails: (req, res) => {
+        res.render('productEditDetails');
     }
 }
 

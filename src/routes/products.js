@@ -9,6 +9,7 @@ router.get('/', productsController.products);
 /* GET products details listing. */
 router.get('/productDetail', productsController.productDetail);
 
+router.get('/productEditDetails', productsController.productEditDetails);
 
 router.get('/productsCart', productsController.productsCart);
 

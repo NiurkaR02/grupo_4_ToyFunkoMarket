@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/head') %>
+    <body>
+        <div class="page-container product-container-edit">
+        <%- include('./partials/header') %>
+            <section class="products-content-edit">
+                <div class="product-details">
+                    <h3>Editar producto</h3>
+                    <form>
+                        <div class="form-edit-item">
+                            <div class="box-producto">
+                                <div class="content-image">
+                                    <input type="file" name="file-product" class="container-file"/>
+                                    <i class="fas fa-camera"></i>
+                                </div>
+                            </div>
+                           
+                            <div class="container-form">
+                                <div>
+                                    <label class="form-label" htmlFor="id">ID</label> <input class="form-control"
+                                        type="text" name="id" id="input-id" placeholder="ID"></input>
+                                </div>
+                                <div>
+                                    <label class="form-label">Número de item:</label> <input class="form-control"
+                                        type="text" name="item" id="input-item" placeholder="Número de Item" />
+                                </div>
+                                <div>
+                                    <label class="form-label">Fabricante:</label> <input class="form-control"
+                                        type="text" name="price" id="input-price" placeholder="Fabricante" />
+                                </div>
+                                <div>
+                                    <label class="form-label">Dimensiones:</label> <input class="form-control"
+                                        type="text" name="price" id="input-price" placeholder="Dimensiones" />
+                                </div>
+                                <div>
+                                    <label class="form-label">Material:</label> <input class="form-control" type="text"
+                                        name="price" id="input-price" placeholder="Material" />
+                                </div>
+                                <div>
+                                    <label class="form-label" htmlFor="name">Nombre</label> <input class="form-control"
+                                        type="text" name="name" id="input-name" placeholder="Name" />
+                                </div>
+                                <div>
+                                    <label class="form-label" htmlFor="description">Descripción</label> <input
+                                        class="form-control" type="text" name="description" id="input-description"
+                                        placeholder="Description" />
+                                </div>
+                                <div>
+                                    <label class="form-label" htmlFor="category">Categoría</label> <input
+                                        class="form-control" type="text" name="category" id="input-category"
+                                        placeholder="Category" />
+                                    </div>
+                                <div>
+                                    <label class="form-label" htmlFor="price">Precio</label> <input
+                                        class="form-control" type="text" name="price" id="input-price"
+                                        placeholder="Precio" />
+                                    </div>
+                                <div>
+                                    <label htmlFor="colors">Colores</label>
+                                    <select name="color" id="select-color">
+                                        <option value="#" selected disabled>Elija un color</option>
+                                        <option value="original">Original</option>
+                                        <option value="rainbow">Arcoiris</option>
+                                        <option value="crom">Cromado</option>
+                                        <option value="red">Rojo Cromado</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                        </div>
+                        <button role="button" class="btn btn-default">
+                            <a href="/productsCart">Guardar 
+                            <i class="fas fa-save"></i></a>
+                        </button>
+                    </form>
+                </div>
+            </section>
+        </div>
+        <%- include('./partials/footer') %>
+    </body>
+
+</html>

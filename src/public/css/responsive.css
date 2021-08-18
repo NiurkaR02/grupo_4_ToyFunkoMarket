@@ -45,5 +45,7 @@
         width: 100%;
         text-align: center;
     }
-
+    .page-container.product-container-edit .products-content-edit .product-details form .form-edit-item {
+        display: block;
+    }
 }

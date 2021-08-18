@@ -376,13 +376,21 @@ footer .contactanos{
 .btn{
     border: 0;
     height: 36px;
-    max-width: 138px;
-    width: 100%;
+    min-width: 138px;
+    width: auto;
     padding: 8px 10px;
     border-radius: 5px;
     color: #fff;
     font-family: 'Lato Bold';
     font-size: 16px;
+    text-align: center;
+}
+.btn a{
+    width: 100%;
+    color: #fff;
+}
+.btn:hover a{
+    color: #12addd;;
 }
 
 .btn.btn-default{

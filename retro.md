@@ -20,3 +20,28 @@ Keep Doing :
     - distracciones generales mientras trabajamos en una tarea.
 
 ## Fecha: 07/28/2021
+
+
+
+##Start Doing:
+
+    - Reuniones más seguidas
+
+##More of:
+
+    - Corregir falencias.
+
+Keep Doing : 
+
+    - Puntos que cumplan con el proyecto.
+
+##Less of:
+
+    - falta de comunicación.
+
+
+##Stop Doing:
+
+    - No debemos dejar las tareas para ultima hora.
+
+## Fecha: 08/18/2021
