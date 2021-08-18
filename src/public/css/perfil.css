@@ -66,6 +66,10 @@
     border: 1px solid #dfdfdf;
 }
 
+.page-container.product-container-perfil .products-content-perfil .product-details form .form-perfil-item .form-data{
+    font-family: 'Lato Bold';
+}
+
 .page-container.product-container-perfil .products-content-perfil .product-details form .buttons-form button{
     display: flex;
     align-items: center;

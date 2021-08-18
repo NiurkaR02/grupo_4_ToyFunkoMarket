@@ -10,6 +10,9 @@ const productsController = {
     },
     productEditDetails: (req, res) => {
         res.render('productEditDetails');
+    },
+    preview: (req, res) => {
+        res.render('preview');
     }
 }
 

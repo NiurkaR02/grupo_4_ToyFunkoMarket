@@ -339,6 +339,50 @@ h2{
     font-style: italic;
 }
 
+.page-container section table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.page-container section table thead th{
+    background-color: #12addd;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    font-weight: normal;
+    font-family: 'Lato Bold';
+}
+
+.page-container section table thead th:first-child{
+    border-radius: 8px 0 0 0;
+}
+
+.page-container section table tbody td {
+    text-align: center;
+    border: 1px solid #dfdfdf;
+}
+
+.page-container section table tbody td:last-child {
+    text-align: end;
+    padding-right: 10px;
+}
+
+.page-container section table tbody td:first-child {
+    text-align: center;
+}
+
+.page-container section table thead th:last-child{
+
+    border-radius: 0 8px 0 0;
+}
+.page-container section .product-details .form-total-items{
+    text-align: end;
+    border-top: 1px solid #dfdfdf;
+    margin-bottom: 40px;
+    padding-right: 12px;
+}
+
+
 footer {
     display: flex;
     align-items: center;
