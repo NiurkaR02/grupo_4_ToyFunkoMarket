@@ -8,23 +8,27 @@
             <div class="container-productos">
                 <div class="box-producto">
                     <div class="content-image">
-                        <img src="/img/star-wars/vader.jpg" alt="Star Wars Vader" title="Star Wars Vader">
+                        <img src=<%= detailProduct.image %> alt="Star Wars Vader" title="Star Wars Vader">
                     </div>
                 </div> 
                 <div class="product-description">
-                    <h2>Figura Funko Darth Vader 01</h2>
-                    <h3>2.000 $</h3>
-                    <p>Figura Darth Vader Funko POP Star Wars Clásico</p>
+                    <h2><%= detailProduct.name %></h2>
+                    <h3><%= detailProduct.price %> $</h3>
+                    <p><%= detailProduct.description %></p>
                      <input type="number" placeholder="#"/>
+                      <p><b>Colors:</b> 
+                     <% detailProduct.colors.forEach(color => { %>
+                        <%=color%>
+                     <% }) %>
+                     </p>
                     <button role="button" class="button-add"><a href="/productsCart">Añadir al carrito <i class="fas fa-shopping-cart"></i></a></button>
-                    <p><b>Etiquetas: </b>Funko, Funko Pop!, Funkos, Juguetes y Coleccionables, Star Wars</p>
-                </div>              
+                </div>                         
             </div>
             <div class="product-details">
                 <h3>Detalles del producto</h3>
                 <div>
-                    <span><b>Número de item:</b> SKU-85693477</span>
-                    <span><b>Categoría:</b> Star wars</span>
+                    <span><b>Número de item:</b> SKU-<%= detailProduct.id %></span>
+                    <span><b>Categoría:</b> <%= detailProduct.category %></span>
                     <span><b>Fabricante:</b>Funko</span>
                     <span><b>Dimensiones:</b>9 × 12 × 16 cm</span>
                     <span><b>Material:</b>Vinilo.</span>
