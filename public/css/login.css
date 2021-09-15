@@ -6,6 +6,7 @@
     max-width: 500px;
     border: 1px solid #eee;
     border-radius: 5px;
+    min-height: 640px;
 }
 
 .form-login label, p{

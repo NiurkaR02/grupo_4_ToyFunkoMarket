@@ -1,3 +1,5 @@
+/**** Terms and conditions ****/
+
 main{
     max-width: 1188px;
     margin: auto;
@@ -12,6 +14,9 @@ main .main-title{
 main section .section-terms-title{
    text-transform: capitalize;
    margin-bottom: 10px;
+   font-family: 'Lato Bold';
+   font-weight: normal;
+   color: #666464;
 }
 main section:last-child .section-terms-content{
    margin-top: 20px;

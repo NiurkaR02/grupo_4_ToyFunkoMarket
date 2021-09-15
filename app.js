@@ -1,43 +1,26 @@
-const express = require('express')
-const path = require('path')
-
+const express = require('express');
 const app = express();
+
+const mainRouter = require('./routes/mainRouter');
+const productsRouter = require('./routes/productsRouter');
+const registerRouter = require('./routes/registerRouter');
+const loginRouter = require('./routes/loginRouter');
+
+
 
 app.use(express.static(__dirname + '/public'));
 
-//Definir rutas
+app.set('view engine', 'ejs');
 
-app.get('/', (req, res) =>{
-    res.sendFile(path.join(__dirname, 'views/home.html'));
-});
-
-app.get('/productDetail', (req, res) =>{
-    res.sendFile(path.join(__dirname, 'views/productDetail.html'));
-});
-
-app.get('/productCart', (req, res) =>{
-    res.sendFile(path.join(__dirname, 'views/productCart.html'));
-});
-
-app.get('/register', (req, res) =>{
-    res.sendFile(path.join(__dirname, 'views/register.html'));
-});
-
-app.get('/login', (req, res) =>{
-    res.sendFile(path.join(__dirname, 'views/login.html'));
-});
-
-app.get('/productCreate', (req, res) =>{
-    res.sendFile(path.join(__dirname, 'views/productCreate.html'));
-});
-
-app.get('/productEdit', (req, res) =>{
-    res.sendFile(path.join(__dirname, 'views/productEdit.html'));
-});
-
-app.get('/termsAndConditions', (req, res) =>{
-    res.sendFile(path.join(__dirname, 'views/termsAndConditions.html'));
-});
+app.use('/', mainRouter);
+app.use('/products', productsRouter);
+app.use('/productDetail', productsRouter);
+app.use('/productCart', productsRouter);
+app.use('/productCreate', productsRouter);
+app.use('/productEdit', productsRouter);
+app.use('/register', registerRouter);
+app.use('/login', loginRouter);
+app.use*('termsAndConditions', mainRouter)
 
 
 //Para levantar servidor
